@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+
+    <meta charset="utf-8">
+    <title>Angular Material Beginning</title>
+</head>
+
+<body ng-app="AngMaterialApp" layout="column">
+<!--<body ng-app="AngMaterialApp" layout="column" ng-controller="UserController as ul">-->
+    <md-toolbar>
+        <h1>Angular Material Starter</h1>
+    </md-toolbar>
+    <div class="container" layout="row" flex>
+        <md-sidenav md-is-locked-open="true" md-whiteframe="4">
+            <md-list>
+                <!--<md-list-item class="nopadding" ng-repeat="u in ul.users">-->
+                <md-list-item class="nopadding">
+                    <!--<md-button class="button-avatar" ng-click="ul.selectUser(u)">-->
+                    <md-button class="button-avatar">
+                        <md-icon md-svg-src="assets/img/avatar-1.svg" class="avatar" aria-label="button-label"></md-icon> Jhon Dude
+                    </md-button>
+                </md-list-item>
+                <md-list-item class="nopadding">
+                    <md-button class="button-avatar">
+                        <md-icon md-svg-src="assets/img/avatar-2.svg" class="avatar" aria-label="button-label"></md-icon> Ana Hickmman
+                    </md-button>
+                </md-list-item>
+                <md-list-item class="nopadding">
+                    <md-button class="button-avatar">
+                        <md-icon md-svg-src="assets/img/avatar-3.svg" class="avatar" aria-label="button-label"></md-icon> Michael Dublê
+                    </md-button>
+                </md-list-item>
+                <md-list-item class="nopadding">
+                    <md-button class="button-avatar"> 
+                        <md-icon md-svg-src="assets/img/avatar-4.svg" class="avatar" aria-label="button-label"></md-icon> Ishikavagima Santos
+                    </md-button>
+                </md-list-item>
+                <md-list-item class="nopadding">
+                    <md-button class="button-avatar">
+                        <md-icon md-svg-src="assets/img/avatar-5.svg" class="avatar" aria-label="button-label"></md-icon> Simijanomuro Kai
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+        <md-content flex id="content">
+             <md-icon md-svg-src="assets/img/avatar-1.svg" class="avatar" aria-label="button-label"></md-icon> 
+             <h2>Jhon Dude</h2>
+             <p>Este é Jhon Dude. Ele não gosta de nada, mas sabe qualquer coisa. Foi encontrado flutuando no Oceano Pacífico em um pedaço de madeira completamente nú por uma tripulação Indonesiana. Apesar de sua aparência ocidental ele sabia falar fluentemente a língua local dos pescadores. Alías, ele fala qualquer língua de qualquer lugar do mundo. </p>
+        </md-content>
+    </div>
+
+
+
+    <!--<script src="app/angular.module.js"></script>-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script src="app/angular.module.js"></script>
+    <script src="app/Users.js"></script>
+    <script src="app/UserService.js"></script>
+    <script src="app/UserController.js"></script>
+</body>
+
+</html>
